@@ -208,3 +208,10 @@ void EnjoyPirateLife() // in progress, will update this path later
 }
 
 
+void pirateEnding()
+{
+    Console.WriteLine("Embracing the title of captain, you steer your crew through countless adventures on the high seas, becoming a legend whispered about in every corner of the world. The years are marked with plunder, freedom, and the fierce loyalty of your crew. Yet, the unpredictable nature of the sea eventually catches up. In a climactic battle against a formidable rival, amidst roaring cannons and raging waves, you meet your end with unparalleled valor, sealing your legacy as one of the most revered pirates in history.");
+    End();
+}
+
+
