@@ -177,3 +177,34 @@ void ChallengePirates()
     }
 }
 
+
+// pirate path
+void EnjoyPirateLife() // in progress, will update this path later
+{
+    Console.WriteLine("Choosing to join the pirates, you quickly adapt to the tumultuous life on the high seas. Over the years, your bravery, cunning, and leadership abilities shine. You're involved in raids on merchant ships, discovering hidden treasures, and navigating treacherous waters. The crew comes to respect and trust you, often turning to you for guidance during challenging times.");
+    Console.WriteLine("The old captain, a man of fierce reputation but aging quickly, took you under his wing. From him, you learn the intricacies of commanding a ship and leading a crew. You also hear tales of his younger days, the battles he's fought, and the many seas he's sailed.");
+    Console.WriteLine("However, fate has its own plans. During an assault on a heavily fortified merchant ship, the battle grows intense. Cannons roar, muskets fire, and the air is thick with smoke and chaos. Amid the skirmish, the captain leads a boarding party, with you by his side. As both crews clash with steel and fury, an enemy marksman takes aim, and the captain is grievously wounded, sacrificing himself to shield a young crew member from a fatal blow.");
+    Console.WriteLine("The battle is won, but at a heavy cost. As the smoke clears, the crew gathers, mourning the loss of their fearless leader. It's the quartermaster who breaks the silence. \"He was a legend, but he believed in you,\" he says, pointing towards you. \"We've seen your strength, your wisdom, and your bravery. The crew needs a captain. We believe you're the one.\"");
+    Console.WriteLine("Memories of your village, the life you left behind, flood your mind. The streets you once roamed, the faces of childhood friends, the tranquility of a simpler life—they all beckon. But you must make a decision.");
+    Console.WriteLine("1) Become Captain");
+    Console.WriteLine("2) Decide to go back home");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            Console.WriteLine($"{player.Name}: \"For the captain, for the crew, I'll lead us to greatness! Let the world remember our name!\"");
+            pirateEnding();
+            break;
+        case 2:
+            Console.WriteLine($"{player.Name}: \"I've lived a life on the edge with you all, faced storms and battles. But now, my heart calls me back to the place I once called home.\"");
+            Retire();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            EnjoyPirateLife();
+            break;
+    }
+}
+
+
