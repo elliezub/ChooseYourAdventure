@@ -92,3 +92,30 @@ void Forest()
     }
 }
 
+// dragon path
+void becomeDragonFriend()
+{
+    Console.WriteLine("After tending to the baby dragon's injured wing and spending some time together, a mutual trust and understanding form between the two of you. As months pass, the dragon's strength returns, and it flaps its wings, taking tentative flights around the clearing.");
+    Console.WriteLine("One evening, as the sun casts a golden hue over the forest, the dragon approaches you with a gleam in its eyes. With gentle nudges and a series of melodious chirps, it communicates a heartfelt invitation: it wants you to follow it to its homeland, the place where dragons reside.");
+    Console.WriteLine($"What will you do, {player.Name}?");
+    Console.WriteLine("1) Accept the dragon's invitation");
+    Console.WriteLine("2) Decline, you've had enough adventure in this lifetime and want to go back home");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            joinedTheDragons = true;
+            visitDragonLand();
+            break;
+        case 2:
+            Console.WriteLine("Before parting ways, the dragon pauses and lets out a soft, melodic hum. From its scales, it gently plucks a brilliant gemstone that shimmers with an inner fire. It's not just any gemstone, but a dragon's tear - a rare and magical artifact said to possess immense power and wisdom. The dragon places it in your hand, a token of its profound gratitude and a symbol of the bond you two shared.");
+            Console.WriteLine("With a final nod and a majestic flap of its wings, the dragon soars into the sky, leaving you with a precious memento and memories that will last a lifetime.");
+            Retire();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            becomeDragonFriend();
+            break;
+    }
+}
