@@ -7,3 +7,13 @@ Player player = new Player(playerName);
 // Initial Game Values
 bool joinedTheDragons = false;
 bool becomeAPirate = false;
+
+
+Start();
+
+void Start()
+{
+    Console.WriteLine($"Welcome, {player.Name}! Your adventure begins...");
+    Console.Beep();
+    Village();
+}
