@@ -119,3 +119,29 @@ void becomeDragonFriend()
             break;
     }
 }
+
+void visitDragonLand()
+{
+    Console.WriteLine("Upon arriving in the dragon land, you're met with awe-inspiring vistas of floating islands and shimmering lakes where dragons roam free. A grand feast is held in your honor, celebrating your act of kindness towards the young dragon. After the festivities, the elders offer you a choice: stay and become a part of their world or return to your own with their blessings.");
+    Console.WriteLine($"What will you do, {player.Name}?");
+    Console.WriteLine("1) Stay");
+    Console.WriteLine("2) Leave");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            Console.WriteLine("Choosing to embrace this otherworldly realm, you make the dragon land your home. The dragons, in their timeless wisdom, share secrets of their age-old magic, and you find solace in their majestic presence. Time flows differently here, and as the years stretch on, you live a life filled with wonder and camaraderie. Eventually, surrounded by these magnificent creatures and the beauty of their realm, you find a serene resting place, leaving behind a legacy of unity between two worlds.");
+            End();
+            break;
+        case 2:
+            Console.WriteLine("With a heavy heart, you decide it's time to go back to your village. The dragons, respecting your decision, prepare for your departure. Before you leave, they bestow upon you a parting gift: a pendant imbued with the essence of their realm, symbolizing the eternal bond you've forged with them. Riding the same dragon that brought you to this magical land, you traverse skies filled with the hues of dawn, eventually reaching your homeland.");
+            Retire();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            visitDragonLand();
+            break;
+    }
+
+}
