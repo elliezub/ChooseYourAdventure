@@ -1,6 +1,6 @@
 # Choose Your Own Adventure
 
-Dive into an immersive console-based story game built with C#. The game showcases object-oriented principles by encapsulating player data and methods, and by structuring the game's flow using function calls.
+This project is a console-based story game built with C#. The game showcases object-oriented principles by encapsulating player data and methods, and by structuring the game's flow using function calls.
 
 ## Technical Features:
 1. Object-Oriented Design: The game uses the Player class to represent the player's character, encapsulating properties like Health, KindnessPoints, and methods like AddKindnessPoints. This allows for modular and maintainable code.
