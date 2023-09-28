@@ -246,4 +246,53 @@ void End()
     player.DisplayStats();
 }
 
+// player stats
+public class Player
+{
+    public string Name { get; private set; }
+    public int Health { get; private set; }
+    public int KindnessPoints { get; private set; }
+    public int EvilPoints { get; private set; }
+    public int BraveryPoints { get; private set; }
+
+    public Player(string name)
+    {
+        Name = name;
+        Health = 100;
+        KindnessPoints = 0;
+        EvilPoints = 0;
+        BraveryPoints = 0;
+    }
+
+    public void AddKindnessPoints(int points)
+    {
+        KindnessPoints += points;
+    }
+
+    public void AddEvilPoints(int points)
+    {
+        EvilPoints += points;
+    }
+
+    public void DecreaseHealth(int amount)
+    {
+        Health -= amount;
+        if (Health < 0) Health = 0;
+    }
+
+    public void AddBraveryPoints(int points)
+    {
+        BraveryPoints += points;
+    }
+
+    public void DisplayStats()
+    {
+        Console.WriteLine($"{Name}'s Final Stats:");
+        Console.WriteLine($"Health: {Health}");
+        Console.WriteLine($"Kindness Points: {KindnessPoints}");
+        Console.WriteLine($"Evil Points: {EvilPoints}");
+    }
+}
+
+
 
