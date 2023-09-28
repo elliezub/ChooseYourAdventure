@@ -145,3 +145,35 @@ void visitDragonLand()
     }
 
 }
+
+
+
+// pirate path
+void ChallengePirates()
+{
+    Console.WriteLine("As you stand your ground on the beach, the pirate ship comes to a halt, and a rowboat swiftly approaches the shore. A tall figure with a rugged beard, wearing a feathered hat, disembarks with a few of his crew. This is unmistakably the pirate captain.");
+    Console.WriteLine("Captain:\"Why are you treading on my beach, landlubber?\" he bellows, his voice echoing across the shoreline. Before you can muster a response, he tosses a sword at your feet. \"Pick it up! Let's see if you can defend your right to be here.\"");
+    Console.WriteLine("Without hesitation, you pick up the sword, and the two of you lock into a fierce duel. Your blades clash, and with every move, you hold your ground against the captain. After an intense standoff, the two of you pause, catching your breath.");
+    Console.WriteLine("Impressed, the captain smirks, \"You've got skills. Ever thought of joining a pirate crew?\"");
+    Console.WriteLine("1) Join the crew");
+    Console.WriteLine("2) Refuse to join");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            becomeAPirate = true;
+            Console.WriteLine($"Captain: \"Well we are happy to have ya, {player.Name}. You are now an honerary member of our crew!");
+            EnjoyPirateLife();
+            break;
+        case 2:
+            Console.WriteLine($"The captain's face darkens. \"Very well,\" he says coldly. \"If you won't join us by choice, you can join the depths of the sea. Walk the plank!\"");
+            End();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            ChallengePirates();
+            break;
+    }
+}
+
