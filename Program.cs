@@ -214,4 +214,29 @@ void pirateEnding()
     End();
 }
 
+// general retirement path
+void Retire()
+{
+    if (becomeAPirate)
+    {
+        Console.WriteLine("As you step foot into your village, a surprising sight greets you. Flags flutter in the breeze, children run around with makeshift wooden swords pretending to be pirates, and the sound of celebratory drums fills the air.");
+        Console.WriteLine("Word of your exploits on the high seas has reached the village long before you did. While you were a pirate on the seas, here, you are a legend. Elders speak of your bravery, and youngsters aspire to have adventures like yours.");
+        Console.WriteLine("Familiar faces approach, embracing you and laughing. They've prepared a feast in your honor. As the night falls, you're surrounded by friends and family, sharing tales of the open sea, treasures, and daring escapes.");
+        Console.WriteLine("While you left as an adventurer, you returned as a hero.");
+    }
+    else if (joinedTheDragons)
+    {
+        Console.WriteLine("As you step foot into your village, holding the dragon's pendant close to your heart, the atmosphere is electric. Your dramatic exit and even more astonishing return on the back of a dragon have turned you into a living legend.");
+        Console.WriteLine("Elders, who once shared stories of faraway places and magical creatures, now turn to you for tales of the dragon land. Young ones gaze at the pendant in awe, dreaming of their own adventures. The pendant serves not just as a memento of your journey, but also as a beacon of hope and wonder, forever changing the fabric of stories in your village.");
+    }
+    else
+    {
+        Console.WriteLine("As you make your way into the village, you're met with warm smiles and tight embraces. The life you left behind seems unchanged, like a preserved memory.");
+        Console.WriteLine("Children, curious and excited, gather around, eager to hear stories from the world beyond. Elders nod in appreciation, respecting your choice to return to your roots.");
+        Console.WriteLine("The night is filled with nostalgia as you reconnect with old friends, reminisce about shared memories, and make plans for the future.");
+        Console.WriteLine("While the seas might have called to you, home is where your heart truly lies.");
+    }
+    End();
+}
+
 
