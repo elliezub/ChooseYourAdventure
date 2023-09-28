@@ -39,3 +39,29 @@ void Village()
             break;
     }
 }
+
+void Beach()
+{
+    Console.WriteLine("As you walk along the shoreline you spot a ship on the horizon. As its black sails billow in the wind, suddenly the once sunny day begins to turn dark. You realize the ship is getting uncomfortably close and the the people... no, the pirates on board are pointing in your direction!");
+    Console.WriteLine($"What will you do, {player.Name}?");
+    Console.WriteLine("1) Stand your ground and confront them");
+    Console.WriteLine("2) Run away into the nearby forest");
+    int choice = int.Parse(Console.ReadLine());
+
+    switch (choice)
+    {
+        case 1:
+            player.AddBraveryPoints(15);
+            Console.WriteLine($"You decide to stand your ground, {player.Name}. You have shown true bravery, but what will become of you?!");
+            ChallengePirates();
+            break;
+        case 2:
+            Console.WriteLine($"You've decided to run into the forest, {player.Name}. Hopefully the pirates won't be able to find you here!");
+            Forest();
+            break;
+        default:
+            Console.WriteLine("Invalid choice.");
+            Beach();
+            break;
+    }
+}
