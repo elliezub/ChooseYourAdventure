@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, Everyone!");
+﻿// Create Player
+Console.WriteLine("Enter your name:");
+string playerName = Console.ReadLine();
+Player player = new Player(playerName);
+
+
+// Initial Game Values
+bool joinedTheDragons = false;
+bool becomeAPirate = false;
