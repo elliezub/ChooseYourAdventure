@@ -285,9 +285,9 @@ public class Player
         BraveryPoints += points;
     }
 
-    public void DisplayStats()
+    public void DisplayStats() // in progress.. updating stats throughout the game/story
     {
-        Console.WriteLine($"{Name}'s Final Stats:");
+        Console.WriteLine($"{Name}'s Final Stats:"); 
         Console.WriteLine($"Health: {Health}");
         Console.WriteLine($"Kindness Points: {KindnessPoints}");
         Console.WriteLine($"Evil Points: {EvilPoints}");
