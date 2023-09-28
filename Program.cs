@@ -239,4 +239,11 @@ void Retire()
     End();
 }
 
+// default end
+void End()
+{
+    Console.WriteLine($"Your adventure ends here, {player.Name}.");
+    player.DisplayStats();
+}
+
 
