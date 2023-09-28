@@ -10,8 +10,8 @@ This project is a console-based story game built with C#. The game showcases obj
 ## Installation:
 Prerequisites:
 You should have .NET Core SDK or .NET Framework installed on your machine.
+
 Steps:
-## Run Locally
 
 Clone the project
 
