@@ -14,8 +14,34 @@ void Start()
 {
     Console.WriteLine();
     Console.WriteLine($"Welcome, {player.Name}! Your adventure begins...");
-    Console.Beep();
+    BeepSong();
     Village();
+}
+
+void BeepSong()
+{
+    // notes
+    int C = 261;   // C4
+    int D = 294;   // D4
+    int E = 329;   // E4
+    int F = 349;   // F4
+
+    // song
+    Console.Beep(E, 300);
+    Console.Beep(D, 250);
+    Console.Beep(C, 300);
+    Thread.Sleep(50);
+
+    Console.Beep(D, 300);
+    Console.Beep(E, 250);
+    Console.Beep(F, 300);
+    Thread.Sleep(50);
+
+    Console.Beep(F, 300);
+    Console.Beep(E, 250);
+    Console.Beep(D, 300);
+    Console.Beep(C, 400);
+
 }
 
 void Village()
